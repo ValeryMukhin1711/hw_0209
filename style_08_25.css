@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    background-color: rgb(211, 211, 196);
+}
+
+.header {
+    padding-left: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px ;
+}
+
+/* .menu {
+padding-left:400px;
+} */
+
+
+#BuhOne {
+    color:aqua;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* .menu_item {
+
+    font-size: 30px;
+    align-content: center;
+} */
+
+#menu_button {
+    font-size: 30px;
+    border: 1px black solid;
+    border-radius: 30px;
+    align-content: center;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#our_services {
+    margin-left: 6rem;
+    font-size: 25px;
+}
+
+#we_specialize {
+    margin-left: 6rem;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.middle_container {
+    /* background-color: beige; */
+    display: grid;
+    width: 50%;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 30% 30%;
+    gap: 80px;
+    margin-top: 2rem;
+    margin-left: 6rem;  
+
+}
+
+.middle_item {
+    /* margin: 1rem 1rem 1rem 1rem; */
+    border: solid #fff 40px;
+    margin-left: 2px;
+    height: 400px;
+    width: 400px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=6859322146bdf0c8d3d0edaeaea35109408918bb-5887629-images-thumbs&n=13);
+}
+
+.accountant_service {
+    border: solid #fff 2px;
+    
+}
+
+.accounting {
+    padding-top:1rem;
+    padding-left: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.details {
+
+    font-size: 1.5rem;
+    color: white;
+    margin-top:12rem;
+    margin-left: 1em;
+    margin-right: 2em;
+    border: 1px white solid;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+/* Чтобы сделать нижний контейнер, я скопировал middle container и css к нему, отображалось нормально. Потом я создал в css bottom container и скопировал туда в точности те же параметры, которые были в middle container, с целью дальше подстраивать bottom container под нужный макет. Затем я переименовал скопированный ранее class= middle container в bottom container, чтобы к нему применялись _скопированные_ ранее параметры (!!!), но в браузере элементы выстроились в столбик вместо того чтобы отображаться согласно правилам. */
+
+.bottom_container {
+    /* background-color: beige; */
+    display: grid;
+    width: 50%;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 30% 30%;
+    gap: 80px;
+    margin-top: 2rem;
+    margin-left: 6rem;  
+}
+
+.btn_item {
+    width: 10%;
+}
